@@ -1,4 +1,4 @@
-import '/home/aryan/repos/cv/src/Styles/Button.css';
+import '/src/Styles/Button.css';
 
 
 export default function Button({ state, handleButton }) {

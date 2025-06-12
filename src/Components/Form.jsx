@@ -2,7 +2,7 @@
 import General from "./General";
 import Education from "./Education";
 import Practical from "./Practical";
-import '/home/aryan/repos/cv/src/Styles/Form.css';
+import '/src/Styles/Form.css';
 
 export default function Form({name,email,number,schoolName,titleOfStudy,dateOfStudy,companyName,positionTitle,responsibilities,from,to,handleNameChange, handlemailChange, handleNumberChange,handleSchoolChange,handletitleChange,handleDateChange,handleCompanyNameChange,handlepositionTitleChange,handleResponsibilitiesChange,handleFromDateChange,handleToDateChange }) {
     
