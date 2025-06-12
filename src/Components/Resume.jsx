@@ -1,4 +1,4 @@
-import '/home/aryan/repos/cv/src/Styles/Resume.css'
+import '/src/Styles/Resume.css'
 
 export default function Resume({ name, email, number, schoolName, titleOfStudy, dateOfStudy, companyName, positionTitle, responsibilities, from, to }) {
     
