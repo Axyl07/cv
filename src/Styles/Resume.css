@@ -1,0 +1,13 @@
+.resume{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    width: 40vw;
+    background-color: white;
+    color: black;
+    min-height: 80vh;
+}

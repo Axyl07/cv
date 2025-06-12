@@ -1,5 +1,8 @@
-export default function Button({ state,handleButton }) {
+import '/home/aryan/repos/cv/src/Styles/Button.css';
+
+
+export default function Button({ state, handleButton }) {
     return (
-        state == 'edit' ? <button type="button" onClick={handleButton} >Submit</button> : <button type="button" onClick={handleButton} >Edit</button> 
+        state == 'edit' ? <button className='btn' type="button" onClick={handleButton} >Submit</button> : <button type="button" className='btn' onClick={handleButton} >Edit</button> 
     )
 }

@@ -1,7 +1,7 @@
 import {  useState } from 'react';
 import Form from './Components/Form'
 import Resume from './Components/Resume'
-import './index.css'
+import './Styles/App.css';
 import Button from './Components/Button';
 function App() {
   const [name, setName] = useState('');
@@ -59,8 +59,10 @@ function App() {
     }
 
   return (
-    stateOfButton == 'edit' ? <div className='main'>
-        <h1>CV</h1>
+
+    <div className='outer'>
+      <h1 style={{textAlign : 'center'}} >Resume Builder</h1>
+      {stateOfButton == 'edit' ? <div className='main'>
         <Form name={name} email={email} number={number} schoolName={schoolName} title={titleOfStudy} companyName={companyName} positionTitle={positionTitle} date={dateOfStudy} responsibilities={responsibilities} from={from} to={to} handleCompanyNameChange={handleCompanyNameChange} handleDateChange={handleDateChange} handleFromDateChange={handleFromDateChange} handleNameChange={handleNameChange} handleNumberChange={handleNumberChange} handleResponsibilitiesChange={handleResponsibilitiesChange} handlemailChange={handlemailChange} handleSchoolChange={handleSchoolChange} handlepositionTitleChange={handlepositionTitleChange} handletitleChange={handletitleChange} handleToDateChange={handleToDateChange} />
         
         
@@ -68,13 +70,16 @@ function App() {
         
         
         
-      <Resume name={name} email={email} number={number} schoolName={schoolName} titleOfStudy={titleOfStudy} companyName={companyName} positionTitle={positionTitle} dateOfStudy={dateOfStudy} responsibilities={responsibilities} from={from} to={to} />
-        <Button state={stateOfButton} handleButton={handleButton} />   
-    </div> : <div>
+        <Resume name={name} email={email} number={number} schoolName={schoolName} titleOfStudy={titleOfStudy} companyName={companyName} positionTitle={positionTitle} dateOfStudy={dateOfStudy} responsibilities={responsibilities} from={from} to={to} />
+          
+      </div> : <div className='main'>
         <Resume name={name} email={email} number={number} schoolName={schoolName} titleOfStudy={titleOfStudy} companyName={companyName} positionTitle={positionTitle} dateOfStudy={dateOfStudy} responsibilities={responsibilities} from={from} to={to} />
         
-        <Button state={stateOfButton} handleButton={handleButton} />
-        </div> 
+      </div>} 
+          <Button state={stateOfButton} handleButton={handleButton}/>
+    
+    </div>
+    
 
         
       
